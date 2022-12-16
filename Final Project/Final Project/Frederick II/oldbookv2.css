@@ -1,0 +1,313 @@
+@import url('https://fonts.cdnfonts.com/css/medieval-sharp');
+
+html {
+	background-color: #fff3c9;
+}
+
+body {
+	margin: auto;
+	max-width: 600px;
+	font-family: 'Medieval Sharp', sans-serif;
+}
+
+header {
+	border-bottom: 3px solid #8b0000;
+}
+
+h1 {
+	font-family: 'Medieval Sharp', sans-serif;
+	color: black;
+	font-size: 3.5rem;
+	margin: auto;
+	text-align: center;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: 'Medieval Sharp', sans-serif;
+	font-weight: normal;
+	color: black;
+	font-size: 2.5rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-family: 'Medieval Sharp', sans-serif;
+	font-weight: normal;
+	color: black;
+	font-size: 2.5rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+h4 {
+	font-family: 'Medieval Sharp', sans-serif;
+	font-weight: normal;
+	color: black;
+	font-size: 2.5rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+h5 {
+	font-family: 'Medieval Sharp', sans-serif;
+	font-weight: normal;
+	color: black;
+	font-size: 2.5rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+h6 {
+	font-family: 'Medieval Sharp', sans-serif;
+	font-weight: normal;
+	color: black;
+	font-size: 2.5rem;
+	border-bottom: 3px solid #8b0000;
+	margin-bottom: 0px;
+}
+
+b, th {
+	color: #8b0000;
+	font-family: 'Medieval Sharp', sans-serif;
+	font-weight: normal;
+}
+
+blockquote {
+	border-left: 3px solid #8b0000;
+	border-right: 3px solid #8b0000;
+	background-color: #facf7f;
+	margin: 1em 10px;
+	padding: 0.5em 10px;
+	
+}
+
+table {
+  border: 3px solid #8b0000;
+  border-collapse: collapse;
+
+}
+
+th, td {
+	border: 0.5px solid #8b0000;
+	padding: 5px;
+}
+
+code {
+	font-family: "Syne Mono", monospace;
+}
+
+.has-dropcap:first-letter {
+  font-family: "IM Fell DW Pica SC", serif;
+  float: left;
+  font-size: 4rem;
+  line-height: 0.65;
+  margin: 0.1em 0 0.2em 0;
+}
+
+.blue::first-letter {
+    font-weight: 700;
+    color: blue;
+}
+
+.red::first-letter {
+    font-weight: 700;
+    color: red;
+}
+
+p::first-letter {
+    font-size: larger;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+nav {
+	list-style: none;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+  }
+  nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0;
+  }
+  nav li a {
+	padding: 10px;
+	font-size: large;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	float: left
+  }
+  nav li a:hover {
+	color: #FFFFFF;
+	background-color: #35af3b;
+  }
+  
+/* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	font-size: medium;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+	position: absolute;
+	bottom: 0;
+	right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+
+/* Collapse Functions*/
+.collapsible {
+	background-color: #fff3c9;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border-bottom: solid 3px #8b0000;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: 'Medieval Sharp', sans-serif;
+	font-weight: normal;
+  }
+
+  .active, .collapsible:hover {
+	background-color: #fff3c9;
+  }
+  .content {
+	display: none;
+	overflow: hidden;
+	background-color: #fff3c9;
+  }
+  
+/* Hand Animation */
+.hand {
+	animation: hand 3s ease 0s infinite normal forwards;
+	float: right;
+}
+
+@keyframes hand {
+	0% {
+		transform: rotate(0);
+	}
+
+	50% {
+		transform: rotate(100deg);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+}
+
+/* falcon animation */
+#falcon {
+	animation: falcon 4s ease 0s 1 normal forwards;
+}
+
+@keyframes falcon {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(100px);
+	}
+}
+
+@media only screen and (min-width: 375px) {
+    iframe {
+        width: 375px;
+        height: 260px;
+    }
+	body {
+		max-width: fit-content;
+	}
+    .hide {
+        display: none;
+    }
+	.bottom-right {
+		display: none;
+	}
+	.icon {
+		width: 75px;
+		height: 75px;
+		float: right;
+	}
+}
+@media only screen and (min-width: 992px) {
+    iframe {
+        width: 1000px;
+        height: 600px;
+    }
+    body {
+        max-width: fit-content;
+        margin: 100px;
+    }
+    img {
+        float: right;
+    }
+	.hand {
+		visibility: hidden;
+	}
+	.hide {
+		display: unset;
+		border: 13px ridge purple;
+	}
+	.bottom-right {
+		display: unset;
+	}
+	nav {
+		bottom: 75px;
+	}
+}
